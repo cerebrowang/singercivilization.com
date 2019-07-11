@@ -46,11 +46,11 @@ $ npm config set registry https://registry.npm.taobao.org
 
 $ npm cache clear --force
 
-$ npm install -g polymer-cli
-
-$ npm install -g firebase-tools # Update to the latest CLI version
-
 $ npm install npm@latest -g # Update to the latest CLI version
+
+$ npm install -g polymer@latest -g
+
+$ npm install -g firebase-tools@latest -g # Update to the latest CLI versio
 
 $ export http_proxy=http://localhost:port
 
