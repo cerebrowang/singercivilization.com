@@ -48,7 +48,7 @@ $ npm cache clear --force
 
 $ npm install npm@latest -g # Update to the latest CLI version
 
-$ npm install -g polymer@latest -g
+$ npm install -g polymer-cli@latest -g
 
 $ npm install -g firebase-tools@latest -g # Update to the latest CLI versio
 
