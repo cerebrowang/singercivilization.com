@@ -30,7 +30,37 @@ $ brew missing
 
 $ brew outdated
 
-$ brew install node -g -s --debug # Compile the specified formula from source even if a bottle is provided. Dependencies will still be installed from bottles if they are available.
+// 替换brew.git:
+
+$ cd "$(brew --repo)"
+
+$ git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+
+// 替换homebrew-core.git:
+
+$ cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+
+$ git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+
+$ brew update
+
+## 切回官方源
+
+$ cd "$(brew --repo)"
+
+$ git remote set-url origin https://github.com/Homebrew/brew.git
+
+$ cd "$(brew --repo)"
+
+$ git remote set-url origin https://github.com/Homebrew/brew.git
+
+$ cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+
+$ git remote set-url origin https://github.com/Homebrew/homebrew-core
+
+$ brew update
+
+$ brew install node -g -s --debug  # Compile the specified formula from source even if a bottle is provided. Dependencies will still be installed from bottles if they are available.
 
 $ open ~/.bash_profile
 
@@ -46,11 +76,11 @@ $ npm config set registry https://registry.npm.taobao.org
 
 $ npm cache clear --force
 
-$ npm install npm@latest -g # Update to the latest CLI version
+$ npm install -g npm@latest     # Update to the latest CLI version
 
-$ npm install -g polymer-cli@latest -g
+$ npm install -g polymer-cli@latest # Update to the latest CLI version
 
-$ npm install -g firebase-tools@latest -g # Update to the latest CLI versio
+$ npm install -g firebase-tools@latest # Update to the latest CLI version   
 
 $ export http_proxy=http://localhost:port
 
@@ -58,15 +88,17 @@ $ npm i -g puppeteer --ignore-scripts
 
 $ PUPPETEER_DOWNLOAD_HOST=https://storage.googleapis.com.cnpmjs.org npm i -g puppeteer
 
-$ npm install -g @canner/cli
+$ npm install -g @canner/cli@latest
 
 $ canner --version
 
+$ npm install -g firebase-admin@latest @gqlify/server@latest @gqlify/firebase@latest @gqlify/firestore@latest
+
 $ git config --global core.autocrlf input
 
-$ git config --global user.name "
+$ git config --global user.name "Your user name"
 
-$ git config --global user.email singerswang (AT) x.ly
+$ git config --global user.email Your_user_email
 
 $ setup Lantern global "Proxy all traffic" model
 
