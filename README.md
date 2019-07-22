@@ -74,7 +74,7 @@ $ brew link --overwrite node
 
 $ npm config set registry https://registry.npm.taobao.org
 
-$ npm cache clear --force
+$ npm cache clean --force
 
 $ npm install -g npm@latest     # Update to the latest CLI version
 
