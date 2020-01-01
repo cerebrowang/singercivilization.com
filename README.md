@@ -130,6 +130,9 @@ npm config set proxy http://server:port
 npm config set https-proxy http://server:port
 
 sudo ln -s /usr/local/bin/node /usr/bin/node
+
 sudo ln -s /usr/local/lib/node /usr/lib/node
+
 sudo ln -s /usr/local/bin/npm /usr/bin/npm
+
 sudo ln -s /usr/local/bin/node-waf /usr/bin/node-waf
