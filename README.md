@@ -68,6 +68,8 @@ $ echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
 
 $ echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.bash_profile
 
+$ source .bash_profile
+
 $ sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
 
 $ brew link --overwrite node
