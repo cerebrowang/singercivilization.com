@@ -82,7 +82,9 @@ $ npm cache clean --force
 
 $ npm install -g npm@latest     # Update to the latest CLI version
 
-$ npm install -g polymer-cli@latest # Update to the latest CLI version
+$ npm install -g lit@lastest # Update to the latest CLI version
+
+$ npm install -g lit-html@lastest # Update to the latest CLI version
 
 $ npm install -g firebase-tools@latest # Update to the latest CLI version   
 
@@ -91,10 +93,6 @@ $ export http_proxy=http://localhost:port
 $ npm i -g puppeteer --ignore-scripts
 
 $ PUPPETEER_DOWNLOAD_HOST=https://storage.googleapis.com.cnpmjs.org npm i -g puppeteer
-
-$ npm install -g @canner/cli@latest
-
-$ canner --version
 
 $ npm install -g firebase-admin@latest @gqlify/server@latest @gqlify/firebase@latest @gqlify/firestore@latest
 
